@@ -1,12 +1,12 @@
 CREATE TABLE album (
     id INT AUTO_INCREMENT PRIMARY KEY,
     titolo VARCHAR(255) NOT NULL,
-    autore VARCHAR(255) NOT NULL,
+    artista VARCHAR(255) NOT NULL,
     anno INT NOT NULL,
     genere VARCHAR(255) NOT NULL
 );
 
-INSERT INTO album (titolo, autore, anno, genere)
+INSERT INTO album (titolo, artista, anno, genere)
 VALUES
     ('The Dark Side of the Moon', 'Pink Floyd', 1973, 'Progressive Rock'),
     ('Abbey Road', 'The Beatles', 1969, 'Rock'),
