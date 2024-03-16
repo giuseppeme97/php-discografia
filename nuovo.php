@@ -10,9 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $query = "INSERT INTO album (titolo, artista, anno, genere) VALUES ('$titolo', '$artista', '$anno', '$genere')";
 
     if ($conn->query($query) === TRUE) {
-        echo "<h3 style='color: green'> Album inserito con successo! </h5><hr>";
+        echo "<h3 style='color: green'> Album inserito con successo! </h3><hr>";
     } else {
-        echo "<h3 style='color: red'> Errore nel caricamento dell'album! </h5><hr>";
+        echo "<h3 style='color: red'> Errore nel caricamento dell'album! </h3><hr>";
     }
 
     $conn->close();
